@@ -36,11 +36,12 @@ var swap = false
 //(However many times there are elements in the array)
 for i in 0..<dataSet.count {
     
+    swap = false
     
     // One pass through the array to float the highest number to the end
     // "i" will equal the number of sorted elements.
     for j in 0..<dataSet.count - 1 - i {
-      swap = false
+     
         //What comparison is this?
         print("Pass \(i + 1), comparison \(j + 1)...")
         
