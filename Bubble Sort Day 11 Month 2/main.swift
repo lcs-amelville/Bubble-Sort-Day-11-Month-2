@@ -28,7 +28,7 @@ waitForInput()
 
 
 // New variable for the array which reduces the passes each pass.
-var unsorted = dataSet.count - 1
+
 var swap = false
 // Sort the array
 
@@ -38,7 +38,8 @@ for i in 0..<dataSet.count {
     
     
     // One pass through the array to float the highest number to the end
-    for j in 0..<unsorted {
+    // "i" will equal the number of sorted elements.
+    for j in 0..<dataSet.count - 1 - i {
       swap = false
         //What comparison is this?
         print("Pass \(i + 1), comparison \(j + 1)...")
@@ -58,8 +59,6 @@ for i in 0..<dataSet.count {
         break
     }
     
-    // Lower the variable by 1
-    unsorted -= 1
     
     // Print the aray after "n" passes
     print("Array after pass \(i + 1)")
