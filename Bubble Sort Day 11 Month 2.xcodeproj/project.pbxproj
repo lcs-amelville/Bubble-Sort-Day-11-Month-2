@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CB71276C26051FB700FFE98F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71276B26051FB700FFE98F /* main.swift */; };
+		CBCCA33C260A1D17008C7EFD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCA33B260A1D17008C7EFD /* main.swift */; };
+		CBCCA343260A1D80008C7EFD /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCA342260A1D80008C7EFD /* SharedFunctions.swift */; };
+		CBCCA346260A1DDA008C7EFD /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCA342260A1D80008C7EFD /* SharedFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CB71276626051FB700FFE98F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CBCCA337260A1D17008C7EFD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +37,20 @@
 /* Begin PBXFileReference section */
 		CB71276826051FB700FFE98F /* Bubble Sort Day 11 Month 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bubble Sort Day 11 Month 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB71276B26051FB700FFE98F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CBCCA339260A1D17008C7EFD /* binarySearchAlogrithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = binarySearchAlogrithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCCA33B260A1D17008C7EFD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CBCCA342260A1D80008C7EFD /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB71276526051FB700FFE98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCA336260A1D17008C7EFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +63,9 @@
 		CB71275F26051FB600FFE98F = {
 			isa = PBXGroup;
 			children = (
+				CBCCA342260A1D80008C7EFD /* SharedFunctions.swift */,
 				CB71276A26051FB700FFE98F /* Bubble Sort Day 11 Month 2 */,
+				CBCCA33A260A1D17008C7EFD /* binarySearchAlogrithm */,
 				CB71276926051FB700FFE98F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CB71276826051FB700FFE98F /* Bubble Sort Day 11 Month 2 */,
+				CBCCA339260A1D17008C7EFD /* binarySearchAlogrithm */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +85,14 @@
 				CB71276B26051FB700FFE98F /* main.swift */,
 			);
 			path = "Bubble Sort Day 11 Month 2";
+			sourceTree = "<group>";
+		};
+		CBCCA33A260A1D17008C7EFD /* binarySearchAlogrithm */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCA33B260A1D17008C7EFD /* main.swift */,
+			);
+			path = binarySearchAlogrithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +115,23 @@
 			productReference = CB71276826051FB700FFE98F /* Bubble Sort Day 11 Month 2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		CBCCA338260A1D17008C7EFD /* binarySearchAlogrithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCCA33F260A1D17008C7EFD /* Build configuration list for PBXNativeTarget "binarySearchAlogrithm" */;
+			buildPhases = (
+				CBCCA335260A1D17008C7EFD /* Sources */,
+				CBCCA336260A1D17008C7EFD /* Frameworks */,
+				CBCCA337260A1D17008C7EFD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = binarySearchAlogrithm;
+			productName = binarySearchAlogrithm;
+			productReference = CBCCA339260A1D17008C7EFD /* binarySearchAlogrithm */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +142,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CB71276726051FB700FFE98F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CBCCA338260A1D17008C7EFD = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -110,6 +163,7 @@
 			projectRoot = "";
 			targets = (
 				CB71276726051FB700FFE98F /* Bubble Sort Day 11 Month 2 */,
+				CBCCA338260A1D17008C7EFD /* binarySearchAlogrithm */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCCA343260A1D80008C7EFD /* SharedFunctions.swift in Sources */,
 				CB71276C26051FB700FFE98F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCA335260A1D17008C7EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCA346260A1DDA008C7EFD /* SharedFunctions.swift in Sources */,
+				CBCCA33C260A1D17008C7EFD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +327,28 @@
 			};
 			name = Release;
 		};
+		CBCCA33D260A1D17008C7EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NQTCN3DXT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBCCA33E260A1D17008C7EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NQTCN3DXT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +366,15 @@
 			buildConfigurations = (
 				CB71277026051FB700FFE98F /* Debug */,
 				CB71277126051FB700FFE98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCCA33F260A1D17008C7EFD /* Build configuration list for PBXNativeTarget "binarySearchAlogrithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCCA33D260A1D17008C7EFD /* Debug */,
+				CBCCA33E260A1D17008C7EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
